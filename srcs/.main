@@ -1,0 +1,28 @@
+
+int	main(void)
+{
+	int	n;
+	
+	n = 10;
+	// ft_printf("my\nhihihello : %-0c, %p, n : %p, %+1.3d\n", 'a', &"good", &n, 122140);
+	// printf("origin\nhihihello : %c, %p, n : %p, %+1.3d\n", 'a', &"good", &n, 122140);
+	// printf("|%-*.*d|\n", 15, 10, 12345);
+	// printf("%.10s", "hello");
+	// printf("100 intlen : %d\n", ft_intlen(100));
+	// printf("0 intlen : %d\n", ft_intlen(0));
+	// printf("-2147483647 intlen : %d\n", ft_intlen(-2147483647));
+	//printf("%x hexlen : %d\n", -2147483647, ft_hexlen(-2147483647));
+	//printf("%p ptrlen : %d\n", &n, ft_ptrlen((long long)&n));
+	//printf("%*.*d\n", 20, 10, 12345);
+	//ft_printf("%3d\n%8.7ihello, world!\n", 1, 1000);
+	//ft_printf("%10c\n", 'a');
+	unsigned int a = -1;
+	//int d = ft_printf("%10s%20.4d%10.8u%15.8x%15.7X%8c%15p\n", "hello", 12, a, 1000, 1000, 'b', &a);
+	//int d2 = printf("%10s%20.4d%10.8u%15.8x%15.7X%8c%15p\n", "hello", 12, a, 1000, 1000, 'b', &a);
+	// int d = ft_printf("return = %d\n", ft_printf("%d%d\n", 0));
+	// int d2 = printf("return = %d\n", printf("%%d%d\n", 0));
+	int d = ft_printf("%10.7p\n", 24);
+	int d2 = printf("%10.7p\n", 24);
+	//int d2 = printf("|%010.5d|\n", -100);
+	printf("d : %d, d2 : %d\n", d, d2);
+}
